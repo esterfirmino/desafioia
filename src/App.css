@@ -1,0 +1,105 @@
+/* Reset básico html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #ffffff, #f5f8ff);
+  color: #101B7A;
+  /* texto padrão em azul escuro */
+}
+
+/* Container principal */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+/* Tipos (badges) */
+.types {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.cards-pokemon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 0 24px;
+}
+
+.type-badge {
+  background: #101B7A;
+  color: white;
+  font-size: 0.8em;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+/* Descrição */
+.card p {
+  font-size: 0.9em;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* Botão */
+.card button {
+  background: #101B7A;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 1280px) {
+  .cards-pokemon{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards-pokemon{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-pokemon{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  .cards-pokemon{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

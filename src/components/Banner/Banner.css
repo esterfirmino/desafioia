@@ -1,0 +1,13 @@
+/* Banner.css */
+.banner {
+    position: relative;
+    width: 100vw; 
+    height: 50vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../Imagens/Banner.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
