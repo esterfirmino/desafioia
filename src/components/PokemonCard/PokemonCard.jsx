@@ -43,7 +43,7 @@ export default function PokemonCard({ image, name, types, description, colors })
 
         <p>{description}</p>
 
-        <button 
+        {/* <button 
           className="card-button"
           style={{ 
             color: cardColors.primary,
@@ -51,7 +51,7 @@ export default function PokemonCard({ image, name, types, description, colors })
           }}
         >
           Saiba mais
-        </button>
+        </button> */}
       </div>
     </div>
   );

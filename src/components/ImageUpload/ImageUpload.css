@@ -1,0 +1,18 @@
+.upload-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #C52540;
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #136099;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #136099;
+}

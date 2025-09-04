@@ -14,7 +14,6 @@ body {
 
 /* Tipos (badges) */
 .types {
-  
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -76,11 +75,14 @@ body {
   }
 }
 
-
-@media (min-width: 1480px) {
+@media (min-width: 2000px) {
   .cards-pokemon{
     grid-template-columns: repeat(5, 1fr);
+    
   }
+  .cards-pokemon {
+  gap: 5rem;
+}
 }
 
 @media (max-width: 1440px) {
@@ -97,17 +99,11 @@ body {
 
 @media (max-width: 768px) {
   .cards-pokemon{
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 700px) {
-  .cards-pokemon{
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 450px) {
   .cards-pokemon{
     grid-template-columns: repeat(2, 1fr);
   }

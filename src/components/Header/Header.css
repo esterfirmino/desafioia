@@ -1,34 +1,125 @@
-.header-container {
-  width: 100%;
-  background: #101B7A;
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 0; 
-  padding: 0; 
-  display: block; 
-}
-
-.header-container h3 {
-  text-align: start;
-  margin: 0; 
-  padding: 10px 20px; 
-}
-
-.header-container {
-  width: 100%;
-  background: #101B7A;
-  color: #ffffff;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 15px 0; 
+  padding: 0;
 }
 
-.header-container h3 {
-  text-align: start;
+.header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #C52540;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 10;
+}
+
+.header .logo h1 {
+  color: white;
   margin: 0;
-  padding: 0 20px; 
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 30px;
+  position: relative;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* Underline effect on hover */
+.header nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: white;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  left: auto;
+  bottom: 0;
+}
+
+.header nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.header nav ul li a:hover {
+  color: #ffd1dc;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+  
+  .header nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #C52540;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .header nav.open {
+    max-height: 200px;
+  }
+  
+  .header nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  
+  .header nav ul li {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
 }

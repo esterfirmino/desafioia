@@ -1,10 +1,10 @@
-import Header from "./components/Header/Header.jsx";
-import Banner from "./components/Banner/Banner.jsx";
-import About from "./components/About/About.jsx";
-import ImageUpload from "./components/ImageUpload/ImageUpload.jsx";
-import PokemonCard from "./components/PokemonCard/PokemonCard.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import './App.css'
+import Header from "../../components/Header/Header.jsx";
+import Banner from "../../components/Banner/Banner.jsx";
+import About from "../../components/About/About.jsx";
+import ImageUpload from "../../components/ImageUpload/ImageUpload.jsx";
+import PokemonCard from "../../components/PokemonCard/PokemonCard.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
+import './Home.css'
 const pokemons = [
   { 
     name: "Bode", 
@@ -138,7 +138,7 @@ export default function App() {
             <ImageUpload />
           </div>
           <h1>
-            Animais Disponíveis
+            Pokémons Disponíveis
           </h1>
           <div className="cards-pokemon-container">
             <div className="cards-pokemon">

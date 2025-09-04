@@ -1,0 +1,83 @@
+.project-container {
+  padding: 2rem 4rem;
+  display: flex;
+  max-width: 100%;
+  gap: 96px;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+h2 {
+  color: #C52540;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+p {
+  color: #000000;
+  font-size: ;
+  margin-bottom: 30px;
+  text-align: justify;
+  max-width: 60rem;
+}
+
+.download-btn {
+  background: #C52540;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #3498db;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px #3498db;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-image {
+  width: 24rem;
+}
+
+/* Responsividade */
+@media (max-width: 836px) {
+  .project-container {
+    padding: 20px 24px;
+    gap: 40px;
+    flex-wrap: wrap-reverse;
+  }
+
+  .project-info h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+
+.project-info p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+  
+  .project-info {
+    text-align: center;
+  }
+  
+  .app-image {
+    max-width: 300px;
+  }
+}
