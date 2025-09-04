@@ -14,7 +14,7 @@ body {
 
 /* Tipos (badges) */
 .types {
-  
+
   display: flex;
   justify-content: center;
   gap: 8px;

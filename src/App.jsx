@@ -134,7 +134,7 @@ export default function App() {
       <main className="landing-page-content-container">
         <section className="landing-page-info-section">
           <div>
-            <h1>Meu Site</h1>
+            <h1>Análise de Imagem com IA</h1>
             <ImageUpload />
           </div>
           <h1>
