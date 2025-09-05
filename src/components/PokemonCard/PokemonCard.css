@@ -1,7 +1,7 @@
 /* Card Container */
 .card-container {
-  width: 280px;
-  height: 380px;
+  width: rem;
+  height: 22rem;
   border-radius: 16px;
   background: white;
   display: flex;
@@ -24,13 +24,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 180px;
+  height: 8rem;
   border-bottom: 1px solid #e2e8f0;
 }
 
 .card-image {
-  width: 120px;
-  height: 120px;
+  width: 6rem;
+  height: 6rem;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -49,7 +49,7 @@
 
 /* Card Title */
 .card-title {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 0 0 12px 0;
   color: white;
@@ -67,7 +67,7 @@
 .card-type {
   padding: 4px 12px;
   border-radius: 12px;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   font-weight: 600;
   color: white;
   text-transform: uppercase;
@@ -88,19 +88,13 @@
   background: #32cd32;
 }
 
-.card-type-mamífero {
-  background: #ffd700;
-  color: #2d3748;
-}
-
 /* Card Description */
 .card-description {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  color: #ffffff;
   line-height: 1.4;
   margin: 0;
   flex: 1;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -125,45 +119,45 @@
   }
   
   .card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   .card-description {
-    font-size: 0.85rem;
+    font-size: 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .card-container {
-    width: 240px;
-    height: 320px;
+    width: 9rem;
+    height: 12rem;
   }
   
   .card-image {
-    width: 80px;
-    height: 80px;
+    width: 3rem;
+    height: 3rem;
   }
   
   .card-image-section {
-    height: 130px;
-    padding: 16px;
+    height: 5rem;
+    padding: 1rem;
   }
   
   .card-body {
-    padding: 14px;
+    padding: 0.5rem;
   }
   
   .card-title {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     margin-bottom: 8px;
   }
   
   .card-description {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
   
   .card-type {
-    padding: 3px 8px;
-    font-size: 0.7rem;
+    padding: 2px 4px;
+    font-size: 0.5rem;
   }
 }

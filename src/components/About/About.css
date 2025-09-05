@@ -5,6 +5,7 @@
   gap: 96px;
   align-items: center;
   justify-content: space-around;
+  background: white;
 
 }
 
@@ -60,19 +61,19 @@ p {
   }
 
   .project-info h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
 
-.project-info p {
-  font-size: 20px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  text-align: justify;
-}
-  
+  .project-info p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+    
   .project-info {
     text-align: center;
   }

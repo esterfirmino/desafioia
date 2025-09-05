@@ -24,9 +24,9 @@ const pokemons = [
     types: ["Mamífero"], 
     description: "Um bode flamejante, forte e ágil.",
     colors: {
-      primary: "#FF6B35",
-      secondary: "#E55A2B",
-      border: "#D44B1A"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -35,9 +35,9 @@ const pokemons = [
     types: ["Mamífero"], 
     description: "Pequeno e esperto, sempre atento.",
     colors: {
-      primary: "#8E8E93",
-      secondary: "#6D6D70",
-      border: "#48484A"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -46,9 +46,9 @@ const pokemons = [
     types: ["Mamífero"], 
     description: "Veloz e poderoso nas planícies.",
     colors: {
-      primary: "#8B4513",
-      secondary: "#6B3410",
-      border: "#4B240D"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -57,9 +57,9 @@ const pokemons = [
     types: ["Ave"], 
     description: "Uma ave rápida que cruza os campos.",
     colors: {
-      primary: "#32CD32",
-      secondary: "#228B22",
-      border: "#006400"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -68,9 +68,9 @@ const pokemons = [
     types: ["Mamífero"], 
     description: "Ágil e silencioso, observa tudo.",
     colors: {
-      primary: "#9932CC",
-      secondary: "#7B68EE",
-      border: "#4B0082"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C525402"
     }
   },
   { 
@@ -79,9 +79,9 @@ const pokemons = [
     types: ["Réptil"], 
     description: "Tranquila, adapta-se com facilidade.",
     colors: {
-      primary: "#20B2AA",
-      secondary: "#008B8B",
-      border: "#006666"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -90,9 +90,9 @@ const pokemons = [
     types: ["Réptil"], 
     description: "Rápido e resistente em qualquer terreno.",
     colors: {
-      primary: "#FF8C00",
-      secondary: "#FF7F00",
-      border: "#E55100"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -101,9 +101,9 @@ const pokemons = [
     types: ["Ave"], 
     description: "Exibe penas coloridas com imponência.",
     colors: {
-      primary: "#4169E1",
-      secondary: "#1E90FF",
-      border: "#0000CD"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -112,9 +112,9 @@ const pokemons = [
     types: ["Ave"], 
     description: "Comum nas cidades, ágil no voo.",
     colors: {
-      primary: "#708090",
-      secondary: "#556B2F",
-      border: "#2F4F4F"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   },
   { 
@@ -123,9 +123,9 @@ const pokemons = [
     types: ["Mamífero"],
     description: "Calma e forte, símbolo dos campos.",
     colors: {
-      primary: "#FFD700",
-      secondary: "#FFA500",
-      border: "#FF8C00"
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
     }
   }
 ];
@@ -153,7 +153,7 @@ export default function App() {
         {/* Seção de Animais */}
         <section className="animals-section">
           <div className="container">
-            <h2 className="section-title">Animais da Fauna Brasileira</h2>
+            <h2 className="section-title">Animais da Fauna da Unifor</h2>
             <p className="section-description">
               Conheça alguns dos animais que nossa IA pode identificar
             </p>
@@ -167,7 +167,6 @@ export default function App() {
           </div>
         </section>
       </main>
-      
       <Footer />
     </div>
   );
