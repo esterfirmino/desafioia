@@ -1,10 +1,12 @@
-import Header from "./components/Header/Header.jsx";
-import Banner from "./components/Banner/Banner.jsx";
-import About from "./components/About/About.jsx";
-import ImageUpload from "./components/ImageUpload/ImageUpload.jsx";
-import PokemonCard from "./components/PokemonCard/PokemonCard.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 import './App.css'
+
+import About from "./components/About/About.jsx";
+import Banner from "./components/Banner/Banner.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header.jsx";
+import ImageUpload from "./components/ImageUpload/ImageUpload.jsx";
+import Metrics from "./components/Metrics/Metrics.jsx";
+import PokemonCard from "./components/PokemonCard/PokemonCard.jsx";
 
 import bodeImg from './Imagens/Bode.png';
 import cassacoImg from './Imagens/Cassaco.png';
@@ -29,17 +31,7 @@ const pokemons = [
       border: "#C52540"
     }
   },
-  { 
-    name: "Cassaco", 
-    image: cassacoImg, 
-    types: ["Mamífero"], 
-    description: "Pequeno e esperto, sempre atento.",
-    colors: {
-      primary: "rgb(173, 34, 34)",
-      secondary: "#C52540",
-      border: "#C52540"
-    }
-  },
+  
   { 
     name: "Cavalo", 
     image: cavaloImg, 
@@ -56,6 +48,17 @@ const pokemons = [
     image: emaImg, 
     types: ["Ave"], 
     description: "Uma ave rápida que cruza os campos.",
+    colors: {
+      primary: "rgb(173, 34, 34)",
+      secondary: "#C52540",
+      border: "#C52540"
+    }
+  },
+  { 
+    name: "Gambá", 
+    image: cassacoImg, 
+    types: ["Mamífero"], 
+    description: "Pequeno e esperto, sempre atento.",
     colors: {
       primary: "rgb(173, 34, 34)",
       secondary: "#C52540",
@@ -137,19 +140,8 @@ export default function App() {
       <Header />
       <Banner />
       <About />
-      
-      <main className="main-content">
-        {/* Seção de Upload de Imagem */}
-        <section className="upload-section-wrapper">
-          <div className="container">
-            <h2 className="section-title">Análise de Imagem com IA</h2>
-            <p className="section-description">
-              Faça upload de uma imagem e nossa IA identificará os animais presentes
-            </p>
-            <ImageUpload />
-          </div>
-        </section>
 
+      <main className="main-content">
         {/* Seção de Animais */}
         <section className="animals-section">
           <div className="container">
@@ -166,6 +158,19 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        {/* Seção de Upload de Imagem */}
+        <section className="upload-section-wrapper">
+          <div className="container">
+            <h2 className="section-title">Análise de Imagem com IA</h2>
+            <p className="section-description">
+              Faça upload de uma imagem e nossa IA identificará os animais presentes
+            </p>
+            <ImageUpload />
+          </div>
+        </section>
+        <h2 className="section-title">Metricas da IA</h2>
+        <Metrics />
       </main>
       <Footer />
     </div>

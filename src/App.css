@@ -30,7 +30,7 @@ body {
 
 /* Seção de Animais */
 .animals-section {
-  background: #f8fafc;
+  background: white;
   padding: 60px 20px;
 }
 
@@ -47,7 +47,7 @@ body {
   font-size: 1rem;
   text-align: center;
   color: #000000;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -87,14 +87,20 @@ body {
 }
 
 /* Responsividade para cards */
-@media (min-width: 1400px) {
+@media (min-width: 1480px) {
+  .cards-pokemon {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1479px) {
   .cards-pokemon {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     max-width: 1200px;
     margin: 0 auto;
   }
 }
-
 @media (min-width: 1024px) and (max-width: 1399px) {
   .cards-pokemon {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -102,7 +108,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 720px) and (max-width: 1023px) {
   .cards-pokemon {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     max-width: 100%;
@@ -110,7 +116,7 @@ body {
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 719px) {
   .cards-pokemon {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     max-width: 100%;

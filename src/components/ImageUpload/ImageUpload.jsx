@@ -10,7 +10,6 @@ function ImageUpload() {
   const [resultadoAnalise, setResultadoAnalise] = useState(null);
   const [statusServidor, setStatusServidor] = useState('unknown'); // 'unknown', 'online', 'offline'
 
-
   const handleImageChange = (event) => {
     try {
       const arquivo = event.target.files[0];
@@ -185,7 +184,7 @@ function ImageUpload() {
 
           {resultadoAnalise && (
             <div className="results-section">
-              <h3>🔬 Resultado da Análise</h3>
+              <h3>{"Resultado da pesquisa: " + resultadoAnalise.fastapi_response.label}</h3>
               
               <div className="results-grid">
                 {/* Descrição */}
