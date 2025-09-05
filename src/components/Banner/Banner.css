@@ -6,8 +6,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../../Imagens/Banner.png');
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        height: 40vh;
+    }
+    
 }

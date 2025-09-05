@@ -117,12 +117,6 @@ const pokemons = [
     }
   }
 ];
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setImage(URL.createObjectURL(file)); // cria uma URL temporária para exibir a imagem
-    }
-  };
 
 
 export default function App() {
