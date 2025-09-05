@@ -5,153 +5,171 @@ import ImageUpload from "./components/ImageUpload/ImageUpload.jsx";
 import PokemonCard from "./components/PokemonCard/PokemonCard.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import './App.css'
+
+import bodeImg from './Imagens/Bode.png';
+import cassacoImg from './Imagens/Cassaco.png';
+import cavaloImg from './Imagens/Cavalo.png';
+import emaImg from './Imagens/Ema.png';
+import gatoImg from './Imagens/Gato.png';
+import iguanaImg from './Imagens/Iguana.png';
+import lagartoImg from './Imagens/Lagarto.png';
+import pavaoImg from './Imagens/Pavão.png';
+import pomboImg from './Imagens/Pombo.png';
+import vacaImg from './Imagens/Vaca.png';
+
 const pokemons = [
   { 
     name: "Bode", 
-    image: "../src/Imagens/Bode.png", 
-    types: ["Fire"], 
+    image: bodeImg, 
+    types: ["Mamífero"], 
     description: "Um bode flamejante, forte e ágil.",
     colors: {
-      primary: "#791948",    // Vermelho para Fire
-      secondary: "#C52540",   // Vermelho mais escuro
-      border: "#791948"       // Borda vermelha
+      primary: "#FF6B35",
+      secondary: "#E55A2B",
+      border: "#D44B1A"
     }
   },
   { 
     name: "Cassaco", 
-    image: "../src/Imagens/Cassaco.png", 
-    types: ["Normal"], 
+    image: cassacoImg, 
+    types: ["Mamífero"], 
     description: "Pequeno e esperto, sempre atento.",
     colors: {
-      primary: "#791948",     // Cinza para Normal
-      secondary: "#C52540",   // Cinza mais escuro
-      border: "#791948"       // Borda cinza
+      primary: "#8E8E93",
+      secondary: "#6D6D70",
+      border: "#48484A"
     }
   },
   { 
     name: "Cavalo", 
-    image: "../src/Imagens/Cavalo.png", 
-    types: ["Normal"], 
+    image: cavaloImg, 
+    types: ["Mamífero"], 
     description: "Veloz e poderoso nas planícies.",
     colors: {
-      primary: "#791948",     // Marrom para cavalo
-      secondary: "#C52540",   // Marrom mais escuro
-      border: "#791948"       // Borda marrom
+      primary: "#8B4513",
+      secondary: "#6B3410",
+      border: "#4B240D"
     }
   },
   { 
     name: "Ema", 
-    image: "../src/Imagens/Ema.png", 
-    types: ["Grass"], 
+    image: emaImg, 
+    types: ["Ave"], 
     description: "Uma ave rápida que cruza os campos.",
     colors: {
-      primary: "#791948",     // Verde para Grass
-      secondary: "#C52540",   // Verde mais escuro
-      border: "#791948"       // Borda verde
+      primary: "#32CD32",
+      secondary: "#228B22",
+      border: "#006400"
     }
   },
   { 
     name: "Gato", 
-    image: "../src/Imagens/Gato.png", 
-    types: ["Normal"], 
+    image: gatoImg, 
+    types: ["Mamífero"], 
     description: "Ágil e silencioso, observa tudo.",
     colors: {
-      primary: "#791948",     // Roxo para gato
-      secondary: "#C52540",   // Roxo mais escuro
-      border: "#791948"       // Borda roxa
+      primary: "#9932CC",
+      secondary: "#7B68EE",
+      border: "#4B0082"
     }
   },
   { 
     name: "Iguana", 
-    image: "../src/Imagens/Iguana.png", 
-    types: ["Normal"], 
+    image: iguanaImg, 
+    types: ["Réptil"], 
     description: "Tranquila, adapta-se com facilidade.",
     colors: {
-      primary: "#791948",     // Verde água
-      secondary: "#C52540",   // Verde água mais escuro
-      border: "#791948"       // Borda verde água
+      primary: "#20B2AA",
+      secondary: "#008B8B",
+      border: "#006666"
     }
   },
   { 
     name: "Lagarto", 
-    image: "../src/Imagens/Lagarto.png", 
-    types: ["Normal"], 
+    image: lagartoImg, 
+    types: ["Réptil"], 
     description: "Rápido e resistente em qualquer terreno.",
     colors: {
-      primary: "#791948",     // Laranja
-      secondary: "#C52540",   // Laranja mais escuro
-      border: "#791948"       // Borda laranja
+      primary: "#FF8C00",
+      secondary: "#FF7F00",
+      border: "#E55100"
     }
   },
   { 
     name: "Pavão", 
-    image: "../src/Imagens/Pavão.png", 
-    types: ["Normal"], 
+    image: pavaoImg, 
+    types: ["Ave"], 
     description: "Exibe penas coloridas com imponência.",
     colors: {
-      primary: "#791948",     // Azul pavão
-      secondary: "#C52540",   // Azul mais escuro
-      border: "#791948"       // Borda azul
+      primary: "#4169E1",
+      secondary: "#1E90FF",
+      border: "#0000CD"
     }
   },
   { 
     name: "Pombo", 
-    image: "../src/Imagens/Pombo.png", 
-    types: ["Normal"], 
+    image: pomboImg, 
+    types: ["Ave"], 
     description: "Comum nas cidades, ágil no voo.",
     colors: {
-      primary: "#791948",     // Cinza azulado
-      secondary: "#C52540",   // Cinza azulado mais escuro
-      border: "#791948"       // Borda cinza azulado
+      primary: "#708090",
+      secondary: "#556B2F",
+      border: "#2F4F4F"
     }
   },
   { 
     name: "Vaca", 
-    image: "../src/Imagens/Vaca.png", 
-    types: ["Mamifero"],
+    image: vacaImg, 
+    types: ["Mamífero"],
     description: "Calma e forte, símbolo dos campos.",
     colors: {
-      primary: "#791948",     // Dourado
-      secondary: "#C52540",   // Dourado mais escuro
-      border: "#791948"       // Borda dourada
+      primary: "#FFD700",
+      secondary: "#FFA500",
+      border: "#FF8C00"
     }
   }
 ];
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      setImage(URL.createObjectURL(file)); // cria uma URL temporária para exibir a imagem
-    }
-  };
 
 
 export default function App() {
   return (
-    <>
+    <div className="app">
       <Header />
       <Banner />
       <About />
-      <main className="landing-page-content-container">
-        <section className="landing-page-info-section">
-          <div>
-            <h1>Análise de Imagem com IA</h1>
+      
+      <main className="main-content">
+        {/* Seção de Upload de Imagem */}
+        <section className="upload-section-wrapper">
+          <div className="container">
+            <h2 className="section-title">Análise de Imagem com IA</h2>
+            <p className="section-description">
+              Faça upload de uma imagem e nossa IA identificará os animais presentes
+            </p>
             <ImageUpload />
           </div>
-          <h1>
-            Animais Disponíveis
-          </h1>
-          <div className="cards-pokemon-container">
-            <div className="cards-pokemon">
-            {pokemons.map((pk) => (
-              <PokemonCard key={pk.name} {...pk} />
-            ))}
+        </section>
+
+        {/* Seção de Animais */}
+        <section className="animals-section">
+          <div className="container">
+            <h2 className="section-title">Animais da Fauna Brasileira</h2>
+            <p className="section-description">
+              Conheça alguns dos animais que nossa IA pode identificar
+            </p>
+            <div className="cards-pokemon-container">
+              <div className="cards-pokemon">
+                {pokemons.map((animal) => (
+                  <PokemonCard key={animal.name} {...animal} />
+                ))}
+              </div>
             </div>
           </div>
         </section>
       </main>
       
       <Footer />
-    </>
+    </div>
   );
 }
 
